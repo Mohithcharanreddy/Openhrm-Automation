@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cucumber TestNG Suite" preserve-order="true">
+
+    <test name="03-Login" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@Login"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="02-ForgotPassword" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@ForgotPassword"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+    
+    <test name="01-Admin" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@Admin"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <!-- PIM in strict order -->
+    <test name="04-PIM-01" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@PIM_01"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="04-PIM-02" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@PIM_02"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="04-PIM-03" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@PIM_03"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="04-PIM-04" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@PIM_04"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="04-PIM-05" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@PIM_05"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <!-- MyInfo (run all MyInfo scenarios together) -->
+    <test name="05-MyInfo" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@MYINFO"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <!-- Logout -->
+    <test name="06-Logout" preserve-order="true">
+        <parameter name="cucumber.filter.tags" value="@LOGOUT"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
